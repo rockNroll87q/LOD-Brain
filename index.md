@@ -17,14 +17,29 @@ The easy portability offered by **LOD-Brain** opens the way for large scale appl
 </p>
 
 <hr>
-# Model
+# DEMO
 
+TODO
+
+<hr>
+# Dataset
+
+TODO
+
+<hr>
+# Results
+
+TODO
 
 <hr>
 # Code
 
 Visit the Github [page](https://github.com/rockNroll87q/LOD-Brain/) for the source code.
 
+<hr>
+# Usage
+
+Visit the relative [page](https://rocknroll87q.github.io/LOD-Brain/usage) to learn how to use `LOD-Brain` from source code, docker, or singularity.
 
 <hr>
 # Citation
