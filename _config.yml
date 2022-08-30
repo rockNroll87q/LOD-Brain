@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
-title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain </a>
+title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 description: Fighting the scanner effect in brain MRI segmentation with a progressive level-of-detail network trained on multi-site data
 
 show_downloads: [true]
