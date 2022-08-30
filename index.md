@@ -1,4 +1,4 @@
-<hr>
+
 # Abstract
 
 Many clinical and research studies of the human brain call for an accurate automated MRI segmentation.
@@ -14,6 +14,7 @@ The easy portability offered by **LOD-Brain** opens the way for large scale appl
 
 <p align="center">
 <img src="./misc/training.png" width="80%" />  
+<figcaption>In a 3D level-of-detail (LOD) network, each level is a CNN. Lower levels, learning from multi-site data, train coarse and site-independent representations of the brain. Training happens in a bottom-up fashion: after convergence of lower levels, superior ones incorporate their learnt spatial context, refining segmentation masks at the fullest scale. At the bottom, we present examples of potential outputs (i.e., reconstructed meshes of outer GM boundary of a testing volume obtained with BrainVoyager) at different network levels.</figcaption>
 </p>
 
 <hr>
