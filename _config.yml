@@ -1,0 +1,9 @@
+theme: jekyll-theme-cayman
+title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain </a>
+description: Fighting the scanner effect in brain MRI segmentation with a progressive level-of-detail network trained on multi-site data
+
+show_downloads: [true]
+
+github:
+  zip_url: https://github.com/rockNroll87q/LOD-Brain/
+  another_url: https://www.biorxiv.org/content/early/2020/12/13/2020.03.24.005132
