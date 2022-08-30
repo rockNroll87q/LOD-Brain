@@ -35,7 +35,7 @@ To address the brain MRI huge variability in intensity statistics and scanning a
 | 1000\_FCP\_ABIDE\_UM | United States | 119 | 14.19 +/- 3.30 | F:26/M:93 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_ABIDE\_USM | United States | 97 | 22.32 +/- 7.72 | M:97 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_ABIDE\_Yale | United States | 48 | 12.81 +/- 2.90 | F:16/M:32 | n.a. | n.a. | n.a. | n.a. |
-| 1000\_FCP\_ACPI | United States | 159 | nan +/- nan | F:40/M:119 | 1.0,1.9 | GE,SIEMENS | 3T | MAGNETOM TrioTim,Signa Excite |
+| 1000\_FCP\_ACPI | United States | 159 | n.a. | F:40/M:119 | 1.0,1.9 | GE,SIEMENS | 3T | MAGNETOM TrioTim,Signa Excite |
 | 1000\_FCP\_ADHD200\_Brown | United States | 24 | 14.42 +/- 2.55 | F:17/M:7 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_ADHD200\_KKI | United States | 76 | 10.26 +/- 1.33 | F:32/M:44 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_ADHD200\_NYU | United States | 246 | 11.50 +/- 2.95 | F:89/M:156 | n.a. | n.a. | n.a. | n.a. |
@@ -47,22 +47,22 @@ To address the brain MRI huge variability in intensity statistics and scanning a
 | 1000\_FCP\_BGSP | United States | 1552 | 21.54 +/- 2.90 | F:904/M:648 | 1.2 | SIEMENS | 3T | MAGNETOM TimTrio |
 | 1000\_FCP\_CORR\_BMB | Germany | 50 | 30.83 +/- 7.02 | F:26/M:24 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_CORR\_BNU | China | 165 | 22.28 +/- 1.98 | F:79/M:86 | n.a. | n.a. | n.a. | n.a. |
-| 1000\_FCP\_CORR\_DC | n.a. | 102 | nan +/- nan |  | n.a. | n.a. | n.a. | n.a. |
+| 1000\_FCP\_CORR\_DC | n.a. | 102 | n.a. |  n.a. | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_CORR\_HNU | China | 30 | 24.37 +/- 2.37 | F:15/M:15 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_CORR\_IACAS | China | 27 | 26.48 +/- 4.97 | F:15/M:12 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_CORR\_IBA\_TRT | United States | 34 | 27.41 +/- 7.96 | F:17/M:17 | n.a. | n.a. | n.a. | n.a. |
-| 1000\_FCP\_CORR\_IPCAS | China | 209 | nan +/- nan | F:114/M:91 | n.a. | n.a. | n.a. | n.a. |
+| 1000\_FCP\_CORR\_IPCAS | China | 209 | n.a. | F:114/M:91 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_CORR\_JHNU | China | 30 | 23.27 +/- 3.63 | F:9/M:21 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_CORR\_LMU | Germany | 90 | 47.81 +/- 23.08 | F:45/M:45 | n.a. | n.a. | n.a. | n.a. |
-| 1000\_FCP\_CORR\_MRN | United States | 53 | nan +/- nan | F:25/M:27 | n.a. | n.a. | n.a. | n.a. |
+| 1000\_FCP\_CORR\_MRN | United States | 53 | n.a. | F:25/M:27 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_CORR\_NKI\_TRT | United States | 21 | 31.67 +/- 10.96 | F:21 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_CORR\_NYU | United States | 204 | 21.46 +/- 11.68 | F:82/M:122 | n.a. | n.a. | n.a. | n.a. |
-| 1000\_FCP\_CORR\_SWU | China | 306 | nan +/- nan | F:162/M:142 | n.a. | n.a. | n.a. | n.a. |
+| 1000\_FCP\_CORR\_SWU | China | 306 | n.a. | F:162/M:142 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_CORR\_UM | Canada | 78 | 65.50 +/- 6.22 | F:57/M:21 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_CORR\_UPSM | United States | 93 | 15.18 +/- 2.79 | F:46/M:47 | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_CORR\_UWM | United States | 25 | 24.96 +/- 3.17 | F:11/M:14 | n.a. | n.a. | n.a. | n.a. |
-| 1000\_FCP\_CORR\_XHCUMS | China | 25 | nan +/- nan | F:10/M:14 | n.a. | n.a. | n.a. | n.a. |
-| 1000\_FCP\_FCON1000\_AnnArbor | United States | 57 | nan +/- nan | F:20/M:37 | n.a. | n.a. | 3T | n.a. |
+| 1000\_FCP\_CORR\_XHCUMS | China | 25 | n.a. | F:10/M:14 | n.a. | n.a. | n.a. | n.a. |
+| 1000\_FCP\_FCON1000\_AnnArbor | United States | 57 | n.a. | F:20/M:37 | n.a. | n.a. | 3T | n.a. |
 | 1000\_FCP\_FCON1000\_Atlanta | United States | 27 | 30.78 +/- 9.87 | F:15/M:12 | n.a. | n.a. | 3T | n.a. |
 | 1000\_FCP\_FCON1000\_Baltimore | United States | 23 | 29.26 +/- 5.34 | F:15/M:8 | n.a. | n.a. | 3T | n.a. |
 | 1000\_FCP\_FCON1000\_Bangor | United Kingdom | 20 | 23.40 +/- 5.18 | M:20 | n.a. | n.a. | 3T | n.a. |
@@ -71,29 +71,29 @@ To address the brain MRI huge variability in intensity statistics and scanning a
 | 1000\_FCP\_FCON1000\_Cambridge\_Buckner | United States | 197 | 21.04 +/- 2.31 | F:122/M:75 | n.a. | n.a. | 3T | n.a. |
 | 1000\_FCP\_FCON1000\_ICBM | Canada | 81 | 44.11 +/- 17.67 | F:44/M:37 | n.a. | n.a. | 3T | n.a. |
 | 1000\_FCP\_FCON1000\_Leiden | Netherlands | 31 | 22.19 +/- 2.53 | F:8/M:23 | n.a. | n.a. | 3T | n.a. |
-| 1000\_FCP\_FCON1000\_Milwaukee | United States | 58 | nan +/- nan | F:31/M:13 | n.a. | n.a. | 3T | n.a. |
+| 1000\_FCP\_FCON1000\_Milwaukee | United States | 58 | n.a. | F:31/M:13 | n.a. | n.a. | 3T | n.a. |
 | 1000\_FCP\_FCON1000\_Munchen | Germany | 16 | 68.44 +/- 3.84 | F:6/M:10 | n.a. | n.a. | 1.5T | n.a. |
 | 1000\_FCP\_FCON1000\_NewYork | United States | 117 | 27.87 +/- 10.87 | F:56/M:61 | n.a. | n.a. | 3T | n.a. |
-| 1000\_FCP\_FCON1000\_Newark | United States | 18 | nan +/- nan | F:9/M:8 | n.a. | n.a. | 3T | n.a. |
+| 1000\_FCP\_FCON1000\_Newark | United States | 18 | n.a. | F:9/M:8 | n.a. | n.a. | 3T | n.a. |
 | 1000\_FCP\_FCON1000\_Oulu | Finland | 92 | 21.50 +/- 0.56 | F:61/M:31 | n.a. | n.a. | 1.5T | n.a. |
 | 1000\_FCP\_FCON1000\_Oxford | United Kingdom | 22 | 29.00 +/- 3.71 | F:10/M:12 | n.a. | n.a. | 3T | n.a. |
 | 1000\_FCP\_FCON1000\_PaloAlto | United States | 17 | 32.47 +/- 7.87 | F:15/M:2 | n.a. | n.a. | 3T | n.a. |
 | 1000\_FCP\_FCON1000\_Queensland | Australia | 19 | 25.95 +/- 3.78 | F:8/M:11 | n.a. | n.a. | 3T | n.a. |
 | 1000\_FCP\_FCON1000\_SaintLouis | United States | 31 | 25.10 +/- 2.28 | F:17/M:14 | n.a. | n.a. | 3T | n.a. |
-| 1000\_FCP\_FCON1000\_Taipei | Taiwan | 22 | nan +/- nan |  | n.a. | n.a. | n.a. | n.a. |
+| 1000\_FCP\_FCON1000\_Taipei | Taiwan | 22 | n.a. |  n.a. | n.a. | n.a. | n.a. | n.a. |
 | 1000\_FCP\_HBN | n.a. | 304 | 11.39 +/- 3.82 | F:130/M:174 | n.a. | SIEMENS | 1.5T | Avanto |
-| 1000\_FCP\_INDI | China | 1045 | nan +/- nan | F:628/M:417 | 1.0 | SIEMENS | 3T | MAGNETOM TrioTim |
-| 1000\_FCP\_RocklandSample | n.a. | 2156 | nan +/- nan | F:1273/M:870 | 1.0 | SIEMENS | 3T | MAGNETOM TrioTim |
-| ABCD | n.a. | 8671 | nan +/- nan | F:4139/M:4518 | n.a. | GE,Philips,SIEMENS | 3T | Achieva dStream,DISCOVERY MR750,Ingenia,Prisma,Prisma\_fit |
-| AOMIC | Netherlands | 1911 | nan +/- nan | F:914/M:861 | n.a. | n.a. | 3T | n.a. |
-| EDSD | n.a. | 290 | nan +/- nan |  | n.a. | n.a. | n.a. | n.a. |
-| GLASGOW | United Kingdom | 1220 | nan +/- nan | F:707/M:508 | 1.0 | SIEMENS | 3T | TrioTim |
+| 1000\_FCP\_INDI | China | 1045 | n.a. | F:628/M:417 | 1.0 | SIEMENS | 3T | MAGNETOM TrioTim |
+| 1000\_FCP\_RocklandSample | n.a. | 2156 | n.a. | F:1273/M:870 | 1.0 | SIEMENS | 3T | MAGNETOM TrioTim |
+| ABCD | n.a. | 8671 | n.a. | F:4139/M:4518 | n.a. | GE,Philips,SIEMENS | 3T | Achieva dStream,DISCOVERY MR750,Ingenia,Prisma,Prisma\_fit |
+| AOMIC | Netherlands | 1911 | n.a. | F:914/M:861 | n.a. | n.a. | 3T | n.a. |
+| EDSD | n.a. | 290 | n.a. |  n.a. | n.a. | n.a. | n.a. | n.a. |
+| GLASGOW | United Kingdom | 1220 | n.a. | F:707/M:508 | 1.0 | SIEMENS | 3T | TrioTim |
 | HCP | n.a. | 890 | n.a. | F:509/M:381 | 1.0 | SIEMENS | 3T | MAGNETOM ConnectomS |
-| IADNI | n.a. | 98 | nan +/- nan |  | n.a. | n.a. | n.a. | n.a. |
-| IBSR | n.a. | 18 | nan +/- nan |  | n.a. | n.a. | n.a. | n.a. |
-| IXI | United Kingdom | 569 | nan +/- nan | F:307/M:247 | n.a. | n.a. | n.a. | n.a. |
-| MALC2012 | n.a. | 35 | nan +/- nan |  | n.a. | n.a. | n.a. | n.a. |
-| MRBrainS | n.a. | 7 | nan +/- nan |  | 0.958 x 0.958 x 3.0 | n.a. | 3T | n.a. |
+| IADNI | n.a. | 98 | n.a. |  n.a. | n.a. | n.a. | n.a. | n.a. |
+| IBSR | n.a. | 18 | n.a. |  n.a. | n.a. | n.a. | n.a. | n.a. |
+| IXI | United Kingdom | 569 | n.a. | F:307/M:247 | n.a. | n.a. | n.a. | n.a. |
+| MALC2012 | n.a. | 35 | n.a. |  n.a. | n.a. | n.a. | n.a. | n.a. |
+| MRBrainS | n.a. | 7 | n.a. |  n.a. | 0.958 x 0.958 x 3.0 | n.a. | 3T | n.a. |
 | MindBoggle101 | n.a. | 92 | 27.99 +/- 8.29 | F:43/M:49 | n.a. | n.a. | n.a. | n.a. |
-| OASIS3 | n.a. | 2633 | nan +/- nan | F:1525/M:1108 | n.a. | n.a. | 1.5T,3T | n.a. |
+| OASIS3 | n.a. | 2633 | n.a. | F:1525/M:1108 | n.a. | n.a. | 1.5T,3T | n.a. |
 
