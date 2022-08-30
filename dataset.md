@@ -10,9 +10,9 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">CEREBRUM 7T</a>
 
 To address the brain MRI huge variability in intensity statistics and scanning artifacts, we collected almost 27,000 brain T1-weighted volumes of both healthy and clinical subjects, released in 78 databases covering at least 155 different world sites.
 
-<!--<p align="center">
+<p align="center">
 <img src="./misc/TSNE_77_sites_colored.png" width="100%" />  
-</p>-->
+</p>
 
 *A visualisation by t-SNE of the 68 MRIQC features (different colors for different datasets). Note that one dataset (\textit{e.g.}, IXI in yellow color) may contain volumes from more than one site, and thus split in separate clusters in the t-SNE feature space.*
 
