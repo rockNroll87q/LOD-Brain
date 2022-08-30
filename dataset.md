@@ -15,7 +15,8 @@ To address the brain MRI huge variability in intensity statistics and scanning a
 <figcaption>A visualisation by t-SNE of the 68 MRIQC features (different colors for different datasets). Note that one dataset (\textit{e.g.}, IXI in yellow color) may contain volumes from more than one site, and thus split in separate clusters in the t-SNE feature space.</figcaption>
 </p>
 
-
+<br/><br/>
+Dataset description.
 
 | Dataset | Country | Cardinality | Age (mean +/- std) | Sex (F/M) | SliceThickness | Manufacturer | MagneticFieldStrength | ManufacturerModel |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
