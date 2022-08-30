@@ -78,13 +78,8 @@ kbd{
 }
 
 .main-content table {
- width: max-content;
-}
-
-body .tablelines table, 
-body .tablelines td, 
-body .tablelines th {
-    border: 1px solid black; 
-    padding:5px;
-    font-size: 0.7em;
+	width: max-content;
+	border: 1px solid black; 
+	padding:5px;
+	font-size: 0.7em; 
 }
