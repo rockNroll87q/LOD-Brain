@@ -75,9 +75,6 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
 
 
 <section>
-  <h1>
-    Voxel-based Atlas
-  </h1>
   <input type="checkbox" id="check1" name="check1" unchecked>
   <label for="check1">outline</label>
   <div class="slidecontainer">
@@ -102,6 +99,7 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
      {
        url: "./results/MALC2012_1000_3_256iso_predicted_volume.nii.gz",
        colorMap: "random",
+       opacity: 0.3,
      },
     ] 
   function handleLocationChange(data){
