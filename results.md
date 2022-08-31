@@ -10,16 +10,19 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 
 
 <script src="https://unpkg.com/@niivue/niivue@0.29.0/dist/niivue.umd.js"></script>
+  
+
 
 <canvas id="gl" height=600></canvas>
-  <label for="check1">outline</label>
   <div class="slidecontainer">
     T1 gamma  <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
   </div>
   <div class="slidecontainer">
     seg opacity<input type="range" min="1" max="255" value="77" class="slider" id="alphaSlider">
   </div>
-      
+  <input type="checkbox" id="check1" name="check1" unchecked>
+  <label for="check1">contours only</label>
+        
 <script>
    var slider = document.getElementById("gammaSlider");
 	slider.oninput = function() {
@@ -28,6 +31,7 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
    slider.oninput = function() {
 		nv.setOpacity (1, this.value / 255);
 	}
+	
   var volumeList = [
     // first object in array is background image
       {
@@ -55,7 +59,12 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
  	})
  nv.attachTo('gl') // the canvas element id
  nv.loadVolumes(volumeList)
- nv.setSliceType(nv.sliceTypeMultiPlanar) // press the "v" key to cycle through views
+ nv.setSliceType(nv.sliceTypeMultiPlanar)
+ 
+  document.getElementById("check1").addEventListener("change", doCheckClick);
+  function doCheckClick() {
+    nv.setAtlasOutline(this.checked)
+  }
 </script>
 
 
