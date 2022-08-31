@@ -60,12 +60,13 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
  	})
  nv.attachTo('gl') // the canvas element id
  nv.loadVolumes(volumeList)
- nv.setSliceType(nv.sliceTypeMultiPlanar)
+<!-- nv.setSliceType(nv.sliceTypeMultiPlanar)-->
  
-  document.getElementById("check1").addEventListener("change", doCheckClick);
-  function doCheckClick() {
-    nv.setAtlasOutline(this.checked)
-  }
+	document.getElementById("check1").addEventListener("change", doCheckClick);
+	function doCheckClick() {
+	    nv.setAtlasOutline(this.checked)
+	}
+	
 </script>
 
 
