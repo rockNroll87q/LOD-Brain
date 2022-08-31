@@ -1,4 +1,3 @@
----
 layout: page
 title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 ---
@@ -15,15 +14,22 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 <canvas id="gl" height=600></canvas>
 
   <div class="slidecontainer">
-    Gamma <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
+    T1 gamma  <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
   </div>
+  <div class="slidecontainer">
+      Seg opacity <input type="range" min="0" max="1" value="0.3" class="slider" id="drawOpacity">
+	</div>
       
 <script>
  var slider = document.getElementById("gammaSlider");
  // Update the current slider value (each time you drag the slider handle)
- slider.oninput = function() {
+	slider.oninput = function() {
        nv.setGamma(this.value * 0.01)
-    }
+	}
+	document.getElementById("drawOpacity").addEventListener("change", doDrawOpacity);
+	function doDrawOpacity(){
+		nv.setDrawOpacity(this.value);
+	}    
   var volumeList = [
     // first object in array is background image
       {
@@ -46,7 +52,10 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 
  // Niivue will adjust the canvas to 100% of its parent container's size 
  // the parent element can be any size you want (small or large)
- var nv = new niivue.Niivue()
+ var nv = new niivue.Niivue({
+ 	backColor: [0., 0., 0., 1],
+ 	dragAndDropEnabled: true,
+ 	})
  nv.attachTo('gl') // the canvas element id
  nv.loadVolumes(volumeList)
  nv.setSliceType(nv.sliceTypeMultiPlanar) // press the "v" key to cycle through views
