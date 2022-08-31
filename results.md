@@ -12,7 +12,7 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 <script src="https://unpkg.com/@niivue/niivue@0.29.0/dist/niivue.umd.js"></script>
 
 <canvas id="gl" height=600></canvas>
-
+  <label for="check1">outline</label>
   <div class="slidecontainer">
     T1 gamma  <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
   </div>
