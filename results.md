@@ -1,3 +1,4 @@
+---
 layout: page
 title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 ---
@@ -94,9 +95,6 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
 </section>
 
 
-
-  
-</section>
 
 <script>
  var volumeList1 = [
