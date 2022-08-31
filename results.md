@@ -21,8 +21,7 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 	</div>
       
 <script>
- var slider = document.getElementById("gammaSlider");
- // Update the current slider value (each time you drag the slider handle)
+   var slider = document.getElementById("gammaSlider");
 	slider.oninput = function() {
        nv.setGamma(this.value * 0.01)
 	}
