@@ -75,21 +75,22 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
 
 
 <section>
-
-<section>
-  <div id="demo1" >
-    <canvas id="gl1" >
-    </canvas>
-  </div>
-  
+  <div class="slidecontainer">
   <input type="checkbox" id="check1" name="check1" unchecked>
-  <label for="check1">contours</label>
+  <label for="check1">outline</label>
+    </div>
   <div class="slidecontainer">
     seg opacity<input type="range" min="1" max="255" value="75" class="slider" id="alphaSlider">
   </div>
   <div class="slidecontainer">
     T1 gamma  <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
   </div>  
+  
+  <div id="demo1" style="width:1000px; height:1000px;">
+    <canvas id="gl1" height=640 width=640>
+    </canvas>
+  </div>
+    
 </section>
 
 
