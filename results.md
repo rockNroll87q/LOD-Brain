@@ -40,6 +40,7 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
      {
        url: "./results/MALC2012_1000_3_256iso_predicted_volume.nii.gz",
        colorMap: "random",
+       opacity: 0.3,
      },
     ] 
   function handleLocationChange(data){
