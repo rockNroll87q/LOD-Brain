@@ -71,14 +71,14 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
 	}
 </script>
 -->
-<!--
+
 <script src="https://unpkg.com/@niivue/niivue@0.29.0/dist/niivue.umd.js"></script>
 
 
 <section>
   <div class="slidecontainer">
   <input type="checkbox" id="check1" name="check1" unchecked>
-  <label for="check1">outline</label>
+  <label for="check1"> contours </label>
     </div>
   <div class="slidecontainer">
     seg opacity<input type="range" min="1" max="255" value="75" class="slider" id="alphaSlider">
@@ -135,9 +135,9 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
     document.getElementById('location').innerHTML = data.xy
   })
 </script>
--->
 
 
+<!--
 <noscript>
   <strong>niivue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
 </noscript>
@@ -198,3 +198,4 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
     document.getElementById('location').innerHTML = data.xy
   })
 </script>
+-->
