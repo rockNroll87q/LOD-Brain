@@ -20,9 +20,11 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
   <div class="slidecontainer">
     seg opacity<input type="range" min="1" max="255" value="77" class="slider" id="alphaSlider">
   </div>
-  <input type="checkbox" id="check1" name="check1" unchecked>
-  <label for="check1">contours only</label>
-        
+  <div class="contours">
+    <input type="checkbox" id="check1" name="check1" unchecked>
+    <label for="check1">contours only</label>
+  </div>
+  
 <script>
    var slider = document.getElementById("gammaSlider");
 	slider.oninput = function() {
