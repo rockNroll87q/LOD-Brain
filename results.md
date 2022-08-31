@@ -28,7 +28,8 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 	slider.oninput = function() {
        nv.setGamma(this.value * 0.01)
 	}
-   slider.oninput = function() {
+	var slider1 = document.getElementById("alphaSlider");
+   slider1.oninput = function() {
 		nv.setOpacity (1, this.value / 255);
 	}
 	
