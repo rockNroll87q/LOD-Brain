@@ -19,8 +19,6 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
     // first object in array is background image
       {
         url: "./results/MALC2012_1000_3_256iso_t1.nii.gz",
-      }
-      {
         url: "./results/MALC2012_1000_3_256iso_predicted_volume.nii.gz",
       }
    ]
