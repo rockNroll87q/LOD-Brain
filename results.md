@@ -10,9 +10,10 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 ## First result
 
 
-Press `v` to toggle between views.
-
-
+* Press `v` to toggle between views.
+* Move the crosshairs: left mouse click and drag.
+* Slice scrolling: mouse or touch pad scroll up and down.
+* Set opacity and gamma with sliders below.
 
 <script src="https://unpkg.com/@niivue/niivue@0.29.0/dist/niivue.umd.js"></script>
 
