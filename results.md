@@ -13,10 +13,7 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 
 
 <section>
-  <div class="slidecontainer">
-  <input type="checkbox" id="check1" name="check1" unchecked>
-  <label for="check1"> contours </label>
-    </div>
+
   <div class="slidecontainer">
     seg opacity<input type="range" min="1" max="255" value="75" class="slider" id="alphaSlider">
   </div>
