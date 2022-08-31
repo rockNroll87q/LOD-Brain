@@ -9,10 +9,12 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 
 ## First result
 
+
 Press `v` to move to single views.
 
-<script src="https://unpkg.com/@niivue/niivue@0.29.0/dist/niivue.umd.js"></script>
 
+
+<script src="https://unpkg.com/@niivue/niivue@0.29.0/dist/niivue.umd.js"></script>
 
 <section>
 
@@ -42,8 +44,6 @@ Press `v` to move to single views.
      {
        url: "./results/MALC2012_1000_3_256iso_predicted_volume.nii.gz",
        colorMap: "random",
-       opacity: 0.3,
-
      },
     ] 
   function handleLocationChange(data){
