@@ -42,16 +42,12 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
         volume: {hdr: null, img: null},
         name: "MALC2012_1000_3",
         colorMap: "gray",
-        opacity: 1,
-        visible: true,        
       },
 	  {
         url: "./results/MALC2012_1000_3_256iso_predicted_volume.nii.gz",
         volume: {hdr: null, img: null},
         name: "seg",
-        colorMap: "random",
-        opacity: 0.3,
-        visible: true,        
+        colorMap: "random",    
       }
    ]
 
