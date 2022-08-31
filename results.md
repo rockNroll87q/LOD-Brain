@@ -14,7 +14,16 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 
 <canvas id="gl" height=600></canvas>
 
+  <div class="slidecontainer">
+    Gamma <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
+  </div>
+      
 <script>
+ var slider = document.getElementById("gammaSlider");
+ // Update the current slider value (each time you drag the slider handle)
+ slider.oninput = function() {
+       nv1.setGamma(this.value * 0.01)
+    }
   var volumeList = [
     // first object in array is background image
       {
