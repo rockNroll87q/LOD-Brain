@@ -44,6 +44,7 @@ Press `v` to move to single views.
      {
        url: "./results/MALC2012_1000_3_256iso_predicted_volume.nii.gz",
        colorMap: "random",
+       opacity: 0.3,
      },
     ] 
   function handleLocationChange(data){
