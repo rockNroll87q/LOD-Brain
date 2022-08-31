@@ -49,10 +49,6 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
   nv1.attachTo('gl1')
   nv1.loadVolumes(volumeList1)
   //nv1.setSliceType(nv1.sliceTypeRender)
-  document.getElementById("check1").addEventListener("change", doCheckClick);
-  function doCheckClick() {
-    nv1.setAtlasOutline(this.checked)
-  }
   var slider = document.getElementById("alphaSlider");
   slider.oninput = function() {
     nv1.setOpacity (1, this.value / 255);
