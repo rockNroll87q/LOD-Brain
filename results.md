@@ -17,18 +17,17 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
     T1 gamma  <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
   </div>
   <div class="slidecontainer">
-      Seg opacity <input type="range" min="0" max="100" value="30" class="slider" id="drawOpacity">
-	</div>
+    seg opacity<input type="range" min="1" max="255" value="77" class="slider" id="alphaSlider">
+  </div>
       
 <script>
    var slider = document.getElementById("gammaSlider");
 	slider.oninput = function() {
        nv.setGamma(this.value * 0.01)
 	}
-	document.getElementById("drawOpacity").addEventListener("change", doDrawOpacity);
-	function doDrawOpacity(){
-		nv.setDrawOpacity(this.value * 0.01);
-	}    
+   slider.oninput = function() {
+		nv.setOpacity (1, this.value / 255);
+	}
   var volumeList = [
     // first object in array is background image
       {
@@ -43,7 +42,7 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
         url: "./results/MALC2012_1000_3_256iso_predicted_volume.nii.gz",
         volume: {hdr: null, img: null},
         name: "seg",
-        colorMap: "winter",
+        colorMap: "random",
         opacity: 0.3,
         visible: true,        
       }
