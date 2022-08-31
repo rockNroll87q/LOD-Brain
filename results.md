@@ -19,7 +19,19 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
     // first object in array is background image
       {
         url: "./results/MALC2012_1000_3_256iso_t1.nii.gz",
+        volume: {hdr: null, img: null},
+        name: "MALC2012_1000_3",
+        colorMap: "gray",
+        opacity: 1,
+        visible: true,        
+      },
+	  {
         url: "./results/MALC2012_1000_3_256iso_predicted_volume.nii.gz",
+        volume: {hdr: null, img: null},
+        name: "MALC2012_1000_3",
+        colorMap: "gray",
+        opacity: 0.3,
+        visible: true,        
       }
    ]
 
@@ -32,7 +44,8 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 </script>
 
 
-
+<!--url: "./results/MALC2012_1000_3_256iso_predicted_volume.nii.gz",
+-->
 
 
 
