@@ -126,6 +126,10 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
   slider.oninput = function() {
     nv1.setOpacity (1, this.value / 255);
   }
+   var slider2 = document.getElementById("gammaSlider");
+	slider2.oninput = function() {
+       nv1.setGamma(this.value * 0.01)
+	}  
   let query = window.location.search
   nv1.on('location', (data) => {
     // data is an object with properties: {mm: [N N N], vox: [N N N], frac: [N N N]}
