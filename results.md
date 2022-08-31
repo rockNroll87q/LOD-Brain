@@ -109,6 +109,7 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
   nv1.attachTo('gl1')
   nv1.loadVolumes(volumeList1)
   //nv1.setSliceType(nv1.sliceTypeRender)
+  nv1.setSliceType(nv.sliceTypeMultiPlanar)
   document.getElementById("check1").addEventListener("change", doCheckClick);
   function doCheckClick() {
     nv1.setAtlasOutline(this.checked)
