@@ -10,7 +10,7 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 ## First result
 
 
-Press `v` to move to single views.
+Press `v` to toggle between views.
 
 
 
@@ -53,6 +53,7 @@ Press `v` to move to single views.
   var nv1 = new niivue.Niivue({onLocationChange:handleLocationChange})
   nv1.attachTo('gl1')
   nv1.loadVolumes(volumeList1)
+  nv1.setHighResolutionCapable(this.checked);
   //nv1.setSliceType(nv1.sliceTypeRender)
   var slider = document.getElementById("alphaSlider");
   slider.oninput = function() {
