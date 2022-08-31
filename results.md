@@ -83,8 +83,8 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
 </section>
 
 <section>
-  <div id="demo1" style="width:640px; height:640px;">
-    <canvas id="gl1" height=640 width=640>
+  <div id="demo1" >
+    <canvas id="gl1" >
     </canvas>
   </div>
   <div class="slidecontainer">
@@ -103,7 +103,6 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
      {
        url: "./results/MALC2012_1000_3_256iso_predicted_volume.nii.gz",
        colorMap: "random",
-       opacity: 0.3,
      },
     ] 
   function handleLocationChange(data){
