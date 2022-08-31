@@ -53,7 +53,6 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
  // the parent element can be any size you want (small or large)
  var nv = new niivue.Niivue({
  	backColor: [0., 0., 0., 1],
- 	dragAndDropEnabled: true,
  	})
  nv.attachTo('gl') // the canvas element id
  nv.loadVolumes(volumeList)
