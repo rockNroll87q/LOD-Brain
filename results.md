@@ -71,7 +71,7 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
 	}
 </script>
 -->
-
+<!--
 <script src="https://unpkg.com/@niivue/niivue@0.29.0/dist/niivue.umd.js"></script>
 
 
@@ -135,5 +135,66 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
     document.getElementById('location').innerHTML = data.xy
   })
 </script>
+-->
 
 
+<noscript>
+  <strong>niivue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+
+<section>
+  <h1>
+    Voxel-based Atlas
+  </h1>
+  <input type="checkbox" id="check1" name="check1" unchecked>
+  <label for="check1">outline</label>
+  <div class="slidecontainer">
+    atlas opacity<input type="range" min="1" max="255" value="255" class="slider" id="alphaSlider">
+  </div>
+</section>
+<!-- demo 1 -->
+<section>
+  <div id="demo1" style="width:640px; height:640px;">
+    <canvas id="gl1" height=640 width=640>
+    </canvas>
+  </div>
+</section>
+<section>
+  <p id="location"></p>
+</section>
+<script src="https://unpkg.com/@niivue/niivue@0.29.0/dist/niivue.umd.js">
+</script>
+<script>
+ var volumeList1 = [
+   // first item is background image
+     {
+       url: "../images/mni152.nii.gz",//"./images/RAS.nii.gz", "./images/spm152.nii.gz",
+       colorMap: "gray",
+     },
+     {
+       url: "../images/aal.nii.gz",//"./images/RAS.nii.gz", "./images/spm152.nii.gz",
+       colorMap: "random",
+     },
+    ] 
+  function handleLocationChange(data){
+    document.getElementById('location').innerHTML = data.xy
+  }
+  var nv1 = new niivue.Niivue({onLocationChange:handleLocationChange})
+  nv1.attachTo('gl1')
+  nv1.loadVolumes(volumeList1)
+  //nv1.setSliceType(nv1.sliceTypeRender)
+  document.getElementById("check1").addEventListener("change", doCheckClick);
+  function doCheckClick() {
+    nv1.setAtlasOutline(this.checked)
+  }
+  var slider = document.getElementById("alphaSlider");
+  slider.oninput = function() {
+    nv1.setOpacity (1, this.value / 255);
+  }
+  let query = window.location.search
+  nv1.on('location', (data) => {
+    // data is an object with properties: {mm: [N N N], vox: [N N N], frac: [N N N]}
+    //document.getElementById('location').innerHTML = 'voxel location: ' + data.vox + ' ' + data.values
+    document.getElementById('location').innerHTML = data.xy
+  })
+</script>
