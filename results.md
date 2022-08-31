@@ -128,12 +128,6 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
 	slider2.oninput = function() {
        nv1.setGamma(this.value * 0.01)
 	}  
-  let query = window.location.search
-  nv1.on('location', (data) => {
-    // data is an object with properties: {mm: [N N N], vox: [N N N], frac: [N N N]}
-    //document.getElementById('location').innerHTML = 'voxel location: ' + data.vox + ' ' + data.values
-    document.getElementById('location').innerHTML = data.xy
-  })
 </script>
 
 
