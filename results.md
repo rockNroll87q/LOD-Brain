@@ -168,11 +168,11 @@ nv.setSliceType(nv.sliceTypeMultiPlanar)
  var volumeList1 = [
    // first item is background image
      {
-       url: "../images/mni152.nii.gz",//"./images/RAS.nii.gz", "./images/spm152.nii.gz",
+       url: "./results/MALC2012_1000_3_256iso_t1.nii.gz",
        colorMap: "gray",
      },
      {
-       url: "../images/aal.nii.gz",//"./images/RAS.nii.gz", "./images/spm152.nii.gz",
+       url: "./results/MALC2012_1000_3_256iso_predicted_volume.nii.gz",
        colorMap: "random",
      },
     ] 
