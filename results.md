@@ -84,24 +84,28 @@ We select some volumes with the worst numerical result (max one for dataset), an
        nv1.setGamma(this.value * 0.01)
 	}  
 	
+	var maskToShow = document.getElementById("mask_to_show")
+	let mask_to_display = '_pred.nii.gz'
+	maskToShow.onchange = function() {
+		switch(document.getElementById("mask_to_show").value) {
+			case "LOD-Brain":
+				mask_to_display = '_pred.nii.gz';
+				break
+			case "FreeSurfer":
+				mask_to_display = '_GT.nii.gz';
+				break
+		    }
+	    }						
+	
 	imgs = ["AOMIC", "EDSD", "HCP", "IBSR", "IXI", "MRBrainS", "MindBoggle101", "OASIS3"]
 	imgEl = document.getElementById('images')
-	var maskToShow = document.getElementById("mask_to_show")
 	for (let i=0; i<imgs.length; i++) {
 		let btn = document.createElement("button")
 		btn.innerHTML = imgs[i]
 		btn.onclick = function() {
 		  let root = './results/'
 		  let img_t1 = root + imgs[i] + '_T1w.nii.gz'
-		  let img_mask = root + imgs[i]  
-		  maskToShow.onchange = function() {
-		    switch(document.getElementById("mask_to_show").value) {
-		    		case "LOD-Brain":
-						img_mask = img_mask + '_pred.nii.gz'
-					case "FreeSurfer":
-						img_mask = img_mask + '_GT.nii.gz'
-				    }
-			    }						
+		  let img_mask = root + imgs[i] + mask_to_display
 		  volumeList1[0].url = img_t1
 		  volumeList1[1].url = img_mask;
 		  nv1.loadVolumes(volumeList1)
