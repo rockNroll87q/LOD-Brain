@@ -92,21 +92,11 @@ We select some volumes with the worst numerical result (max one for dataset), an
 		btn.onclick = function() {
 		  let root = './results/'
 		  let img_t1 = root + imgs[i] + '_T1w.nii.gz'
-		  let img_mask = root + imgs[i] 
-		   maskToShow.onchange = function() {
-		    switch(document.getElementById("mask_to_show").value) {
-		    		case "LOD-Brain":
-						img_mask = img_mask + '_pred.nii.gz';
-						break
-					case "FreeSurfer":
-						img_mask = img_mask + '_GT.nii.gz';
-						break
-				    }
-			    }						
-			  volumeList1[0].url = img_t1
-			  volumeList1[1].url = img_mask;
-			  nv1.loadVolumes(volumeList1)
-			  nv1.updateGLVolume()
+		  let img_mask = root + imgs[i]  + '_pred.nii.gz'
+		  volumeList1[0].url = img_t1
+		  volumeList1[1].url = img_mask;
+		  nv1.loadVolumes(volumeList1)
+		  nv1.updateGLVolume()
 	}
 	imgEl.appendChild(btn)
 	}	
