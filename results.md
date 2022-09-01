@@ -67,7 +67,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
        opacity: 0.3,
      },
     ] 
-  var nv1 = new niivue.Niivue()
+  var nv1 = new niivue.Niivue(
   nv1.attachTo('gl1')
   nv1.loadVolumes(volumeList1)
   nv1.setHighResolutionCapable(true)
@@ -83,20 +83,23 @@ We select some volumes with the worst numerical result (max one for dataset), an
 	}  
 	
 	var maskToShow = document.getElementById("mask_to_show")
-	var mask_to_display = '_pred.nii.gz'
+   var root = './results/'
+   var img_t1 = volumeList1[0].url 
+   var img_mask = volumeList1[1].url 
+   var mask_to_display = '_pred.nii.gz'
+	
 	maskToShow.onchange = function() {
 		switch(document.getElementById("mask_to_show").value) {
 			case "LOD-Brain":
 				mask_to_display = '_pred.nii.gz';
-				console.log(mask_to_display)
-				console.log(img_mask)
 				break
 			case "FreeSurfer":
-				mask_to_display = '_GT.nii.gz';
-				console.log(mask_to_display)
-				console.log(img_mask)
+ 				mask_to_display = '_GT.nii.gz';
 				break
 		    }
+			volumeList1[1].url = img_mask + mask_to_display;
+	  	  	nv1.loadVolumes(volumeList1)
+		  	nv1.updateGLVolume()
 	    }						
 	
 	imgs = ["AOMIC", "EDSD", "HCP", "IBSR", "IXI", "MRBrainS", "MindBoggle101", "OASIS3"]
@@ -105,13 +108,11 @@ We select some volumes with the worst numerical result (max one for dataset), an
 		let btn = document.createElement("button")
 		btn.innerHTML = imgs[i]
 		btn.onclick = function() {
-		  let root = './results/'
-		  let img_t1 = root + imgs[i] + '_T1w.nii.gz'
-		  let img_mask = root + imgs[i] + mask_to_display
+		  img_t1 = root + imgs[i] + '_T1w.nii.gz'
+		  img_mask = root + imgs[i] 
 		  volumeList1[0].url = img_t1
-		  console.log(mask_to_display)
-		  volumeList1[1].url = img_mask;
-		  nv1.loadVolumes(volumeList1)
+		  volumeList1[1].url = img_mask + mask_to_display;  
+	  	  nv1.loadVolumes(volumeList1)
 		  nv1.updateGLVolume()
 	}
 	imgEl.appendChild(btn)
