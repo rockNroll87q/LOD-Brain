@@ -85,6 +85,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
 		  let root = './results/'
 		  let img1 = root + imgs[i] + '_T1w.nii.gz'
 		  let img2 = root + imgs[i] + '_pred.nii.gz'
+		  console.log("Loading: "+ img1)
 		  volumeList1[0].url = img_t1
 		  volumeList1[1].url = img_pred
 		  nv1.loadVolumes(volumeList1)
