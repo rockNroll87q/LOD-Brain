@@ -70,7 +70,8 @@ We select some volumes with the worst numerical result (max one for dataset), an
   var nv1 = new niivue.Niivue()
   nv1.attachTo('gl1')
   nv1.loadVolumes(volumeList1)
-  nv1.setHighResolutionCapable(this.checked);
+  //nv1.setHighResolutionCapable(this.checked);
+  nv1.opts.dragMode = nv1.dragModes.pan;
   //nv1.setSliceType(nv1.sliceTypeRender)
   var slider = document.getElementById("alphaSlider");
   slider.oninput = function() {
