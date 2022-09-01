@@ -70,7 +70,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
   var nv1 = new niivue.Niivue()
   nv1.attachTo('gl1')
   nv1.loadVolumes(volumeList1)
-  nv1.setHighResolutionCapable(true)
+  //nv1.setHighResolutionCapable(true)
   //nv1.opts.dragMode = nv1.dragModes.pan
   //nv1.setSliceType(nv1.sliceTypeRender)
   var slider = document.getElementById("alphaSlider");
@@ -85,7 +85,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
 	var maskToShow = document.getElementById("mask_to_show")
    var root = './results/'
    var img_t1 = volumeList1[0].url 
-   var img_mask = volumeList1[1].url 
+   var img_mask = (volumeList1[1].url).split("_")[0]
    var mask_to_display = '_pred.nii.gz'
 	
 	maskToShow.onchange = function() {
