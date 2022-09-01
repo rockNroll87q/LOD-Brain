@@ -36,12 +36,15 @@ We select some volumes with the worst numerical result (max one for dataset), an
   <div class="header_showing_results">
     T1 gamma  <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
   </div>  
-  
+    <p>
+	  <input onclick="checkClick(this)" type="checkbox" id="check1" name="check1" value="true">
+	  <label for="check1">Switch to FreeSurfer mask</label>
+  </p>
   <div id="demo1" style="width:1000px; height:1000px;">
     <canvas id="gl1" height=640 width=640>
     </canvas>
   </div>
-    
+
 </section>
 
 
@@ -57,6 +60,11 @@ We select some volumes with the worst numerical result (max one for dataset), an
        url: "./results/AOMIC_pred.nii.gz",
        colorMap: "random",
        opacity: 0.3,
+     },
+     {
+       url: "./results/AOMIC_GT.nii.gz",
+       colorMap: "random",
+       opacity: 0.,
      },
     ] 
   function handleLocationChange(data){
@@ -85,14 +93,20 @@ We select some volumes with the worst numerical result (max one for dataset), an
 		  let root = './results/'
 		  let img_t1 = root + imgs[i] + '_T1w.nii.gz'
 		  let img_pred = root + imgs[i] + '_pred.nii.gz'
+		  let img_gt = root + imgs[i] + '_GT.nii.gz'
 		  volumeList1[0].url = img_t1
 		  volumeList1[1].url = img_pred
+		  volumeList1[2].url = img_gt
 		  nv1.loadVolumes(volumeList1)
 		  nv1.updateGLVolume()
 	}
 	imgEl.appendChild(btn)
 	}	
-	
+  	async function checkClick(cb) {
+	   volumeList1[1].opacity = 0 
+		volumeList1[2].opacity = 0.3 
+	   nv1.updateGLVolume()
+  	}
 	
 	
 </script>
