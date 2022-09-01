@@ -13,6 +13,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
 
 * Click the buttons to load test images.
 * Press `v` to toggle between views.
+* Press `c` for interactive clip plane.
 * Move the crosshairs: left mouse click and drag.
 * Slice scrolling: mouse or touch pad scroll up and down.
 * Set opacity and gamma with sliders below.
