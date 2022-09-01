@@ -102,7 +102,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
 		  	nv1.updateGLVolume()
 	    }						
 	
-	imgs = ["AOMIC", "EDSD", "HCP", "IBSR", "IXI", "MRBrainS", "MindBoggle101", "OASIS3"]
+	imgs = ["AOMIC", "EDSD", "HCP", "IBSR", "IXI", "MindBoggle101", "OASIS3"]
 	imgEl = document.getElementById('images')
 	for (let i=0; i<imgs.length; i++) {
 		let btn = document.createElement("button")
