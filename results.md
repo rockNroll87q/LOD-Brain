@@ -88,9 +88,11 @@ We select some volumes with the worst numerical result (max one for dataset), an
 		switch(document.getElementById("mask_to_show").value) {
 			case "LOD-Brain":
 				mask_to_display = '_pred.nii.gz';
+				console.log(mask_to_display)
 				break
 			case "FreeSurfer":
 				mask_to_display = '_GT.nii.gz';
+				console.log(mask_to_display)
 				break
 		    }
 	    }						
@@ -105,6 +107,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
 		  let img_t1 = root + imgs[i] + '_T1w.nii.gz'
 		  let img_mask = root + imgs[i] + mask_to_display
 		  volumeList1[0].url = img_t1
+		  console.log(mask_to_display)
 		  volumeList1[1].url = img_mask;
 		  nv1.loadVolumes(volumeList1)
 		  nv1.updateGLVolume()
