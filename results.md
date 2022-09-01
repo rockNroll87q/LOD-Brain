@@ -22,25 +22,22 @@ We select some volumes with the worst numerical result (max one for dataset), an
 
 
 <section>
-
   <div class="header_showing_results">
 	  <p>Test images:</p>
 	  <p id="images"></p>
-	  
   </div>
   <div class="header_showing_results">
     seg opacity<input type="range" min="1" max="255" value="75" class="slider" id="alphaSlider">
   </div>
   <div class="header_showing_results">
     T1 gamma  <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
-
-<label for="mask_to_show">Segmentation mask</label>
+  </div>  
+  <label for="mask_to_show">Segmentation mask</label>
     <select name="contrast" id="dragMode">
       <option value="our">LOD-Brain</option>
       <option value="FS">FreeSurfer</option>
     </select>
-  </div>  
-  
+
   <div id="demo1" style="width:1000px; height:1000px;">
     <canvas id="gl1" height=640 width=640>
     </canvas>
