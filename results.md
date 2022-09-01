@@ -70,8 +70,8 @@ We select some volumes with the worst numerical result (max one for dataset), an
   var nv1 = new niivue.Niivue()
   nv1.attachTo('gl1')
   nv1.loadVolumes(volumeList1)
-  nv1.setHighResolutionCapable(True);
-  nv1.opts.dragMode = nv1.dragModes.pan;
+  nv1.setHighResolutionCapable(True)
+  nv1.opts.dragMode = nv1.dragModes.pan
   //nv1.setSliceType(nv1.sliceTypeRender)
   var slider = document.getElementById("alphaSlider");
   slider.oninput = function() {
@@ -83,7 +83,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
 	}  
 	
 	var maskToShow = document.getElementById("mask_to_show")
-	let mask_to_display = '_pred.nii.gz'
+	var mask_to_display = '_pred.nii.gz'
 	maskToShow.onchange = function() {
 		switch(document.getElementById("mask_to_show").value) {
 			case "LOD-Brain":
