@@ -37,10 +37,12 @@ We select some volumes with the worst numerical result (max one for dataset), an
   <div class="header_showing_results">
     T1 gamma  <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
   </div>  
-    <p>
-	  <input onclick="checkClick(this)" type="checkbox" id="check1" name="check1" value="true">
-	  <label for="check1">Switch to FreeSurfer mask</label>
-  </p>
+<label for="mask_to_show">Segmentation mask</label>
+    <select name="contrast" id="dragMode">
+      <option value="our">LOD-Brain</option>
+      <option value="FS">FreeSurfer</option>
+    </select>
+    
   <div id="demo1" style="width:1000px; height:1000px;">
     <canvas id="gl1" height=640 width=640>
     </canvas>
@@ -51,6 +53,24 @@ We select some volumes with the worst numerical result (max one for dataset), an
 
 
 <script>
+  var maskToShow = document.getElementById("mask_to_show")
+  maskToShow.onchange = function() {
+    switch(document.getElementById("mask_to_show").value) {
+      case "our":
+		  let root = './results/'
+		  let img_mask = root + imgs[i] + '_pred.nii.gz'		  volumeList1[1].url = img_mask
+		  nv1.loadVolumes(volumeList1)
+		  nv1.updateGLVolume()
+        break
+      case "FS":
+		  let root = './results/'
+		  let img_mask = root + imgs[i] + '_GT.nii.gz'		  volumeList1[1].url = img_mask
+		  nv1.loadVolumes(volumeList1)
+		  nv1.updateGLVolume()
+        break
+    }
+  }
+
  var volumeList1 = [
    // first item is background image
      {
@@ -62,16 +82,11 @@ We select some volumes with the worst numerical result (max one for dataset), an
        colorMap: "random",
        opacity: 0.3,
      },
-     {
-       url: "./results/AOMIC_GT.nii.gz",
-       colorMap: "random",
-       opacity: 0.,
-     },
     ] 
   function handleLocationChange(data){
     document.getElementById('location').innerHTML = data.xy
   }
-  var nv1 = new niivue.Niivue({onLocationChange:handleLocationChange})
+  //var nv1 = new niivue.Niivue({onLocationChange:handleLocationChange})
   nv1.attachTo('gl1')
   nv1.loadVolumes(volumeList1)
   nv1.setHighResolutionCapable(this.checked);
@@ -93,11 +108,8 @@ We select some volumes with the worst numerical result (max one for dataset), an
 		btn.onclick = function() {
 		  let root = './results/'
 		  let img_t1 = root + imgs[i] + '_T1w.nii.gz'
-		  let img_pred = root + imgs[i] + '_pred.nii.gz'
-		  let img_gt = root + imgs[i] + '_GT.nii.gz'
-		  volumeList1[0].url = img_t1
-		  volumeList1[1].url = img_pred
-		  volumeList1[2].url = img_gt
+		  let img_mask = root + imgs[i] + '_pred.nii.gz'		  volumeList1[0].url = img_t1
+		  volumeList1[1].url = img_mask
 		  nv1.loadVolumes(volumeList1)
 		  nv1.updateGLVolume()
 	}
