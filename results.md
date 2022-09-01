@@ -67,7 +67,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
        opacity: 0.3,
      },
     ] 
-  var nv1 = new niivue.Niivue(
+  var nv1 = new niivue.Niivue()
   nv1.attachTo('gl1')
   nv1.loadVolumes(volumeList1)
   nv1.setHighResolutionCapable(true)
