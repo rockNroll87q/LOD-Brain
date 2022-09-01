@@ -67,10 +67,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
        opacity: 0.3,
      },
     ] 
-  function handleLocationChange(data){
-    document.getElementById('location').innerHTML = data.xy
-  }
-  var nv1 = new niivue.Niivue({onLocationChange:handleLocationChange})
+  var nv1 = new niivue.Niivue()
   nv1.attachTo('gl1')
   nv1.loadVolumes(volumeList1)
   nv1.setHighResolutionCapable(this.checked);
