@@ -42,9 +42,9 @@ We select some volumes with the worst numerical result (max one for dataset), an
 	  <option value="LOD-Brain">LOD-Brain</option>
 	  <option value="FreeSurfer">FreeSurfer</option>
 	</select>
-	</div> 
+	
+</div> 
    
-  
   <div id="demo1" style="width:1000px; height:1000px;">
     <canvas id="gl1" height=640 width=640>
     </canvas>
