@@ -99,6 +99,15 @@ figcaption {
 
 //  figure, footer, header, hgroup, main, menu, nav, section, summary
 
-
-
+.header_showing_results .button {
+	
+    background-color: gold;
+//    color: midnightblue;
+    border-radius: 7px;
+    border-color: darkgrey;
+	
+}
+.header_showing_results .button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
