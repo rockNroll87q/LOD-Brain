@@ -35,14 +35,15 @@ We select some volumes with the worst numerical result (max one for dataset), an
   </div>
   <div class="header_showing_results">
     T1 gamma  <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
-    
+  </div> 
+  <div class="header_showing_results">  
   <label for="mask_to_show">Segmentation mask</label>
 	<select name="myMask" id="mask_to_show">
 	  <option value="LOD-Brain">LOD-Brain</option>
 	  <option value="FreeSurfer">FreeSurfer</option>
 	</select>
-	
-  </div>  
+	</div> 
+   
   
   <div id="demo1" style="width:1000px; height:1000px;">
     <canvas id="gl1" height=640 width=640>
@@ -92,7 +93,15 @@ We select some volumes with the worst numerical result (max one for dataset), an
 		btn.onclick = function() {
 		  let root = './results/'
 		  let img_t1 = root + imgs[i] + '_T1w.nii.gz'
-		  let img_mask = root + imgs[i]  + '_pred.nii.gz'
+		  let img_mask = root + imgs[i]  
+		  maskToShow.onchange = function() {
+		    switch(document.getElementById("mask_to_show").value) {
+		    		case "LOD-Brain":
+						img_mask = img_mask + '_pred.nii.gz'
+					case "FreeSurfer":
+						img_mask = img_mask + '_GT.nii.gz'
+				    }
+			    }						
 		  volumeList1[0].url = img_t1
 		  volumeList1[1].url = img_mask;
 		  nv1.loadVolumes(volumeList1)
