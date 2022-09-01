@@ -9,6 +9,8 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 
 ## First result
 
+We select some volumes with the worst numerical result (max one for dataset), and display FreeSurfer and LOD-Brain segmentation masks overlayed to the correspondent T1w image. Despite low performance, the segmentation mask returned by LOD-Brain shown less errors with respect to Freesurfer, which is indicative of low-quality ground-truth masks.
+
 * Click the buttons to load test images.
 * Press `v` to toggle between views.
 * Move the crosshairs: left mouse click and drag.
