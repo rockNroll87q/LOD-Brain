@@ -41,6 +41,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
 	  <option value="LOD-Brain">LOD-Brain</option>
 	  <option value="FreeSurfer">FreeSurfer</option>
 	</select>
+	
   </div>  
   
   <div id="demo1" style="width:1000px; height:1000px;">
@@ -130,98 +131,3 @@ We select some volumes with the worst numerical result (max one for dataset), an
 		nv1.updateGLVolume();	
 	  }-->
 
-
-
-<!--<script src="https://unpkg.com/@niivue/niivue@0.29.0/dist/niivue.umd.js"></script>
-
-
-<section>
-  <div class="header_showing_results">
-	  <p>Test images:</p>
-	  <p id="images"></p>
-  </div>
-  <div class="header_showing_results">
-    seg opacity<input type="range" min="1" max="255" value="75" class="slider" id="alphaSlider">
-  </div>
-  <div class="header_showing_results">
-    T1 gamma  <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
-  </div>  
-  <label for="mask_to_show">Segmentation mask</label>
-    <select name="contrast" id="dragMode">
-      <option value="our">LOD-Brain</option>
-      <option value="FS">FreeSurfer</option>
-    </select>
-
-  <div id="demo1" style="width:1000px; height:1000px;">
-    <canvas id="gl1" height=640 width=640>
-    </canvas>
-  </div>
-
-</section>
-
-
-
-<script>
-  var maskToShow = document.getElementById("mask_to_show")
-  maskToShow.onchange = function() {
-    switch(document.getElementById("mask_to_show").value) {
-      case "our":
-		  let root = './results/'
-		  let img_mask = root + imgs[i] + '_pred.nii.gz'		  volumeList1[1].url = img_mask
-		  nv1.loadVolumes(volumeList1)
-		  nv1.updateGLVolume()
-        break
-      case "FS":
-		  let root = './results/'
-		  let img_mask = root + imgs[i] + '_GT.nii.gz'		  volumeList1[1].url = img_mask
-		  nv1.loadVolumes(volumeList1)
-		  nv1.updateGLVolume()
-        break
-    }
-  }
- var volumeList1 = [
-   // first item is background image
-     {
-       url: "./results/AOMIC_T1w.nii.gz",
-       colorMap: "gray",
-     },
-     {
-       url: "./results/AOMIC_pred.nii.gz",
-       colorMap: "random",
-       opacity: 0.3,
-     },
-    ] 
-  function handleLocationChange(data){
-    document.getElementById('location').innerHTML = data.xy
-  }
-  var nv1 = new niivue.Niivue({onLocationChange:handleLocationChange})
-  nv1.attachTo('gl1')
-  nv1.loadVolumes(volumeList1)
-  nv1.setHighResolutionCapable(this.checked);
-  //nv1.setSliceType(nv1.sliceTypeRender)
-  var slider = document.getElementById("alphaSlider");
-  slider.oninput = function() {
-    nv1.setOpacity (1, this.value / 255);
-  }
-   var slider2 = document.getElementById("gammaSlider");
-	slider2.oninput = function() {
-       nv1.setGamma(this.value * 0.01)
-	}  
-	
-	imgs = ["AOMIC", "EDSD", "HCP", "IBSR", "IXI", "MRBrainS", "MindBoggle101", "OASIS3"]
-	imgEl = document.getElementById('images')
-	for (let i=0; i<imgs.length; i++) {
-		let btn = document.createElement("button")
-		btn.innerHTML = imgs[i]
-		btn.onclick = function() {
-		  let root = './results/'
-		  let img_t1 = root + imgs[i] + '_T1w.nii.gz'
-		  let img_mask = root + imgs[i] + '_pred.nii.gz'		  volumeList1[0].url = img_t1
-		  volumeList1[1].url = img_mask
-		  nv1.loadVolumes(volumeList1)
-		  nv1.updateGLVolume()
-		}
-		imgEl.appendChild(btn)
-	}
-</script>
--->
