@@ -83,8 +83,8 @@ We select some volumes with the worst numerical result (max one for dataset), an
 		btn.innerHTML = imgs[i]
 		btn.onclick = function() {
 		  let root = './results/'
-		  let img1 = root + imgs[i] + '_T1w.nii.gz'
-		  let img2 = root + imgs[i] + '_pred.nii.gz'
+		  let img_t1 = root + imgs[i] + '_T1w.nii.gz'
+		  let img_pred = root + imgs[i] + '_pred.nii.gz'
 		  console.log("Loading: "+ img1)
 		  volumeList1[0].url = img_t1
 		  volumeList1[1].url = img_pred
