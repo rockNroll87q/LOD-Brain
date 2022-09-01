@@ -7,7 +7,7 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 
 <hr>
 
-## First result
+## Segmentation result
 
 We select some volumes with the worst numerical result (max one for dataset), and display FreeSurfer and LOD-Brain segmentation masks overlayed to the correspondent T1w image. Despite low performance, the segmentation mask returned by LOD-Brain shown less errors with respect to Freesurfer, which is indicative of low-quality ground-truth masks.
 
@@ -85,7 +85,6 @@ We select some volumes with the worst numerical result (max one for dataset), an
 		  let root = './results/'
 		  let img_t1 = root + imgs[i] + '_T1w.nii.gz'
 		  let img_pred = root + imgs[i] + '_pred.nii.gz'
-		  console.log("Loading: "+ img1)
 		  volumeList1[0].url = img_t1
 		  volumeList1[1].url = img_pred
 		  nv1.loadVolumes(volumeList1)
