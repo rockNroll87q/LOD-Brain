@@ -37,7 +37,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
     T1 gamma  <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
     
   <label for="mask_to_show">Segmentation mask</label>
-	<select name="LOD-Brain" id="mask_to_show">
+	<select name="myMask" id="mask_to_show">
 	  <option value="LOD-Brain">LOD-Brain</option>
 	  <option value="FreeSurfer">FreeSurfer</option>
 	</select>
