@@ -9,7 +9,7 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 
 ## First result
 
-
+* Click the buttons to load test images.
 * Press `v` to toggle between views.
 * Move the crosshairs: left mouse click and drag.
 * Slice scrolling: mouse or touch pad scroll up and down.
@@ -19,10 +19,19 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 
 <section>
 
-  <div class="slidecontainer">
+</section>
+
+<section>
+
+  <div class="header_showing_results">
+	  <p>Test images:</p>
+	  <p id="images"></p>
+	  
+  </div>
+  <div class="header_showing_results">
     seg opacity<input type="range" min="1" max="255" value="75" class="slider" id="alphaSlider">
   </div>
-  <div class="slidecontainer">
+  <div class="header_showing_results">
     T1 gamma  <input type="range" min="10" max="400" value="100" class="slider" id="gammaSlider">
   </div>  
   
@@ -64,5 +73,25 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 	slider2.oninput = function() {
        nv1.setGamma(this.value * 0.01)
 	}  
+	
+	imgs = ["AOMIC", "EDSD", "HCP", "IBSR", "IXI", "MRBrainS", "MindBoggle101", "OASIS3"]
+	imgEl = document.getElementById('images')
+	for (let i=0; i<imgs.length; i++) {
+		let btn = document.createElement("button")
+		btn.innerHTML = imgs[i]
+		btn.onclick = function() {
+		  let root = './results/'
+		  let img1 = root + imgs[i] + '_T1w.nii.gz'
+		  let img2 = root + imgs[i] + '_pred.nii.gz'
+		  volumeList1[0].url = img_t1
+		  volumeList1[1].url = img_pred
+		  nv1.loadVolumes(volumeList1)
+		  nv1.updateGLVolume()
+	}
+	imgEl.appendChild(btn)
+	}	
+	
+	
+	
 </script>
 
