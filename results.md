@@ -48,11 +48,11 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
  var volumeList1 = [
    // first item is background image
      {
-       url: "./results/MALC2012_1000_3_256iso_t1.nii.gz",
+       url: "./results/AOMIC_T1w.nii.gz",
        colorMap: "gray",
      },
      {
-       url: "./results/MALC2012_1000_3_256iso_predicted_volume.nii.gz",
+       url: "./results/AOMIC_pred.nii.gz",
        colorMap: "random",
        opacity: 0.3,
      },
