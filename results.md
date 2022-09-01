@@ -89,10 +89,12 @@ We select some volumes with the worst numerical result (max one for dataset), an
 			case "LOD-Brain":
 				mask_to_display = '_pred.nii.gz';
 				console.log(mask_to_display)
+				console.log(img_mask)
 				break
 			case "FreeSurfer":
 				mask_to_display = '_GT.nii.gz';
 				console.log(mask_to_display)
+				console.log(img_mask)
 				break
 		    }
 	    }						
