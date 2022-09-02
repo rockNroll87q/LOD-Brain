@@ -21,7 +21,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
 
 
 
-<script src="https://unpkg.com/@niivue/niivue@0.29.0/dist/niivue.umd.js"></script>
+<script src="./niivue.umd.js"></script>
 
 <section>
 
@@ -63,13 +63,14 @@ We select some volumes with the worst numerical result (max one for dataset), an
      },
      {
        url: "./results/AOMIC_pred.nii.gz",
-       colorMap: "random",
+       colorMap: "lod",
        opacity: 0.3,
      },
     ] 
   var nv1 = new niivue.Niivue()
   nv1.attachTo('gl1')
   nv1.loadVolumes(volumeList1)
+  //nv1.setColorMap(1, 'red')
   //nv1.setHighResolutionCapable(true)
   //nv1.opts.dragMode = nv1.dragModes.pan
   //nv1.setSliceType(nv1.sliceTypeRender)
