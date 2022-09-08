@@ -92,7 +92,7 @@ Dataset description.
 | GLASGOW | United Kingdom | 1220 | n.a. | F:707/M:508 | 1.0 | SIEMENS | 3T | TrioTim |
 | HCP | n.a. | 890 | n.a. | F:509/M:381 | 1.0 | SIEMENS | 3T | MAGNETOM ConnectomS |
 | IADNI | n.a. | 98 | n.a. |  n.a. | n.a. | n.a. | n.a. | n.a. |
-| IBSR | n.a. | 18 | n.a. |  n.a. | n.a. | n.a. | n.a. | n.a. |
+| IBSR | United States | 18 | n.a. |  n.a. | 0.84 x 0.84 x 1.5 mm iso to 1.0 x 1.0 x 1.5 mm | n.a. | 1.5T | n.a. |
 | IXI | United Kingdom | 569 | n.a. | F:307/M:247 | n.a. | n.a. | n.a. | n.a. |
 | MALC2012 | n.a. | 35 | n.a. |  n.a. | n.a. | n.a. | n.a. | n.a. |
 | MRBrainS | n.a. | 7 | n.a. |  n.a. | 0.958 x 0.958 x 3.0 | n.a. | 3T | n.a. |
