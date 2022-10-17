@@ -1,2 +1,35 @@
-# LOD-Brain
-Fighting the scanner effect in brain MRI segmentation with a progressive level-of-detail network trained on multi-site data
+# <p align="center">LOD-Brain</p>
+
+
+Visit the [Project page](https://rocknroll87q.github.io/LOD-Brain/).
+
+## Description
+
+Implementation of the paper "Fighting the scanner effect in brain MRI segmentation with a progressive level-of-detail network trained on multi-site data" ([link](**** TODO ****)).
+
+<p align="center">
+<img src="misc/training.png" width="700" />  
+</p>
+
+## Usage
+
+Visit the relative [page](https://rocknroll87q.github.io/LOD-Brain/usage) to learn how to use `CEREBRUM-7T` from source code, docker, or singularity.
+
+## Data
+
+Visit the relative [page](https://rocknroll87q.github.io/LOD-Brain/data) for all the information needed about the data.
+
+## Authors
+
+[Michele Svanera](https://github.com/rockNroll87q)
+&
+[Mattia Savardi](https://github.com/msavardi)
+
+
+## Citation
+
+If you find this code useful in your research, please consider citing our paper:
+
+```
+TODO
+```
