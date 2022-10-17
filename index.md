@@ -5,15 +5,14 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 
 # Abstract
 
-Many clinical and research studies of the human brain call for an accurate automated MRI segmentation.
-Despite the advances granted by deep learning techniques, these methods are usually trained with data from single or few MRI sites or vendors. 
-This severely limits the model’s ability to generalise well to external data i.e., new volumes from unseen datasets.
-Thanks to the increasing availability of open MRI brain data, we aggregate an unprecedented set of 27,000 T1w volumes from 155 acquisition sites, at 1.5 and 3T, from a population spanning from 8 to 90 years old.
-To learn from this broad range of variability, as for scanner noise, vendors, brain morphology, etc., we exploit **LOD-Brain**, a 3D progressive level-of-detail (LOD) network.
-Coarser levels are responsible to learn a robust brain prior useful for identifying main brain structures and their locations; finer levels, instead, progressively refine the model to handle site-specific intensity distributions, artifacts, and inter-subject anatomical variations.
-Thanks to an extremely low number of parameters if compared to other competitors, **LOD-Brain** returns accurate 3D segmentation masks in few seconds.
-Extensive tests demonstrate that our method produces superior results with respect to state-of-the-art solutions, without the need of retraining nor fine-tuning when used on external data. 
-The easy portability offered by **LOD-Brain** opens the way for large scale application in both research and clinical settings across different healthcare institutions, patient populations, and imaging technology manufacturers.
+Many clinical and research studies of the human brain require an accurate structural MRI segmentation.
+While traditional atlas-based methods can be applied to volumes from any acquisition site, recent deep learning algorithms ensure improved accuracy only when tested on data from the same sites exploited in training (i.e., internal data).
+The performance degradation experienced on external data (i.e., unseen volumes from unseen sites) is due to the inter-site variabilities in intensity distributions induced by different MR scanner models, acquisition parameters, and unique artefacts.
+To mitigate this site-dependency, often referred to as the *scanner effect*, we propose **LOD-Brain**, a 3D progressive level-of-detail (LOD) convolutional neural network able to segment brain data from any site.
+Coarser network levels are responsible to learn a robust anatomical prior useful for identifying brain structures and their locations, while finer levels progressively refine the model to handle site-specific intensity distributions and anatomical variations.
+We ensure robustness across sites by training the model on an unprecedented rich dataset aggregating data from open repositories: almost 27,000 T1w volumes from around 160 acquisition sites, at 1.5 - 3T, from a population spanning from 8 to 90 years old.  
+Extensive tests demonstrate that **LOD-Brain** produces state-of-the-art results, with no significant difference in performance between internal and external sites, and robust to challenging anatomical variations.
+Its portability opens the way for large scale application across different healthcare institutions, patient populations, and imaging technology manufacturers. Code, model, and demo are available at the [project website](https://rocknroll87q.github.io/LOD-Brain/).
 
 
 <p align="center">
