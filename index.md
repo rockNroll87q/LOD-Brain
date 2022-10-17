@@ -17,7 +17,7 @@ Its portability opens the way for large scale application across different healt
 
 <p align="center">
 <img src="./misc/training.png" width="80%" />  
-<figcaption>In a 3D level-of-detail (LOD) network, each level is a CNN. Lower levels, learning from multi-site data, train coarse and site-independent representations of the brain. Training happens in a bottom-up fashion: after convergence of lower levels, superior ones incorporate their learnt spatial context, refining segmentation masks at the fullest scale. At the bottom, we present examples of potential outputs (i.e., reconstructed meshes of outer GM boundary of a testing volume obtained with BrainVoyager) at different network levels.</figcaption>
+<figcaption>LOD-Brain is a level-of-detail (LOD) network, where each LOD is a U-net which processes 3D brain multi-data at a different scale. Lower levels learn a coarse and site-independent brain representation, while superior ones incorporate the learnt spatial context, and refine segmentation masks at finer scales. Examples of outputs (grey matter renderings obtained with BrainVoyager) at different LODs are shown at the bottom.</figcaption>
 </p>
 
 <hr>
