@@ -34,7 +34,7 @@ Visit the relative [page](https://rocknroll87q.github.io/LOD-Brain/dataset) for 
 <hr>
 # Results
 
-Visit the Github [page](https://rocknroll87q.github.io/LOD-Brain/results#top) for the source code.
+Visit the result [page](https://rocknroll87q.github.io/LOD-Brain/results#top) for more results.
 
 <hr>
 # Code
