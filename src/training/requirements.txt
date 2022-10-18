@@ -1,0 +1,15 @@
+loguru
+wandb
+nibabel
+pandas
+nvidia_smi
+pydantic
+scikit-learn
+scikit-image
+numpy
+PyYAML
+tensorflow>=2.2.0
+moviepy 
+imageio
+click
+tensorflow_addons
