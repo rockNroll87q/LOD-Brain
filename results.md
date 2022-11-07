@@ -123,6 +123,15 @@ We select some volumes with the worst numerical result (max one for dataset), an
 	
 </script>
 
+## Bias results
+
+Figure: Dice similarity coefficient for different groups based on demographics and technical characteristics. From top left to bottom right: sex, age, magnet strength, scanner manufacturer, slide thickness, scanner model. All results are obtained on the balanced testing set of 5949 volumes.
+
+<p align="center">
+<img src="./misc/bias.png" width="70%" />  
+
+</p>.
+
   <!--var maskToShow = document.getElementById("mask_to_show")
   maskToShow.onchange = function() {
     switch(document.getElementById("mask_to_show").value) {		case "LOD-Brain":

@@ -45,7 +45,16 @@ Visit the relative [page](https://rocknroll87q.github.io/LOD-Brain/usage) to lea
 If you find this work useful, please consider citing our paper:
 
 ```
-TO ADD
+@misc{Svanera2022,
+  doi = {10.48550/ARXIV.2211.02400},
+  url = {https://arxiv.org/abs/2211.02400},
+  author = {Svanera, Michele and Savardi, Mattia and Signoroni, Alberto and Benini, Sergio and Muckli, Lars},
+  keywords = {3D segmentation, brain MRI, progressive level-of-detail architecture, 3D multi-site learning},
+  title = {Fighting the scanner effect in brain MRI segmentation with a progressive level-of-detail network trained on multi-site data},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
 ```
 
 
