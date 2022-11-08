@@ -5,7 +5,7 @@ Visit the [Project page](https://rocknroll87q.github.io/LOD-Brain/).
 
 ## Description
 
-Implementation of the paper "Fighting the scanner effect in brain MRI segmentation with a progressive level-of-detail network trained on multi-site data" ([link](**** TODO ****)).
+Implementation of the paper "Fighting the scanner effect in brain MRI segmentation with a progressive level-of-detail network trained on multi-site data" ([link](https://rocknroll87q.github.io/LOD-Brain/)).
 
 <!--<p align="center">
 <img src="misc/training.png" width="700" />  
