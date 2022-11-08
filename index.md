@@ -14,25 +14,12 @@ Many clinical and research studies of the human brain require an accurate struct
 <figcaption>Figure 1: LOD-Brain is a level-of-detail (LOD) network, where each LOD is a U-net which processes 3D brain multi-data at a different scale. Lower levels learn a coarse and site-independent brain representation, while superior ones incorporate the learnt spatial context, and refine segmentation masks at finer scales. Examples of outputs (grey matter renderings) at different LODs are shown in blue at the bottom.</figcaption>
 </p>
 
-<hr>
-# DEMO
-
-TODO
-
-<hr>
-# Dataset
-
-Visit the relative [page](https://rocknroll87q.github.io/LOD-Brain/dataset) for a better understanding of the datasets used in this work.
 
 <hr>
 # Results
 
 Visit the result [page](https://rocknroll87q.github.io/LOD-Brain/results#top) for more results.
 
-<hr>
-# Code
-
-Visit the Github [page](https://github.com/rockNroll87q/LOD-Brain/) for the source code.
 
 <hr>
 # Usage
