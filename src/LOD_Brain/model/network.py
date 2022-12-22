@@ -1,7 +1,10 @@
 """
 Created on Feb 12 2021
-@author: met
+@authors:
+* Mattia Savardi, University of Brescia
+* Michele Svanera, University of Glasgow
 """
+
 import tensorflow as tf
 from tensorflow.keras.models import Model
 from loguru import logger
