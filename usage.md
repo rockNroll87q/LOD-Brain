@@ -18,9 +18,9 @@ Steps for singularity (similar to docker):
 
 1. Download the container and the code from Github
 
-	`$ wget https://osf.io/download/v8g9x/ && mv index.html LOD_Brain.simg`
+	`wget https://osf.io/download/v8g9x/ && mv index.html LOD_Brain.simg`
 	
-	`$ git clone https://github.com/rockNroll87q/LOD-Brain`
+	`git clone https://github.com/rockNroll87q/LOD-Brain`
 	
 2. Prepare your testing data. As an example, I download a volume from a public repository ([link](https://openneuro.org/datasets/ds002207)):
 
