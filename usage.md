@@ -25,6 +25,7 @@ Steps for singularity (similar to docker):
 2. Prepare your testing data. As an example, I download a volume from a public repository ([link](https://openneuro.org/datasets/ds002207)):
 
 	`wget https://s3.amazonaws.com/openneuro.org/ds002207/sub-01/anat/sub-01_T1w.nii.gz`
+	
 	`wget https://s3.amazonaws.com/openneuro.org/ds002207/sub-02/anat/sub-02_T1w.nii.gz`
 	
 3. Run the container:
