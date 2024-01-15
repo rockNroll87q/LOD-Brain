@@ -107,7 +107,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
 	imgEl = document.getElementById('images')
 	for (let i=0; i<imgs.length; i++) {
 		let btn = document.createElement("button")
-		btn.innerHTML = imgs[i]
+		btn.innerHTML = image+i
 		btn.onclick = function() {
 		  img_t1 = root + imgs[i] + '_T1w.nii.gz'
 		  img_mask = root + imgs[i] 
