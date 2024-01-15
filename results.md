@@ -6,7 +6,7 @@ title: <a href="https://rocknroll87q.github.io/LOD-Brain/">LOD-Brain</a>
 [<-- main page](https://rocknroll87q.github.io/LOD-Brain/)
 
 <hr>
-
+<!--
 ## Segmentation result
 
 We select some volumes with the worst numerical result (max one for dataset), and display FreeSurfer and LOD-Brain segmentation masks overlayed to the correspondent T1w image. Despite low performance, the segmentation mask returned by LOD-Brain shown less errors with respect to Freesurfer, which is indicative of low-quality ground-truth masks.
@@ -107,7 +107,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
 	imgEl = document.getElementById('images')
 	for (let i=0; i<imgs.length; i++) {
 		let btn = document.createElement("button")
-		btn.innerHTML = image+i
+		btn.innerHTML = imgs[i]
 		btn.onclick = function() {
 		  img_t1 = root + imgs[i] + '_T1w.nii.gz'
 		  img_mask = root + imgs[i] 
@@ -123,6 +123,7 @@ We select some volumes with the worst numerical result (max one for dataset), an
 	
 </script>
 
+-->
 ## Bias results
 
 Figure: Dice similarity coefficient for different groups based on demographics and technical characteristics. From top left to bottom right: sex, age, magnet strength, scanner manufacturer, slide thickness, scanner model. All results are obtained on the balanced testing set of 5949 volumes.
