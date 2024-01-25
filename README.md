@@ -36,15 +36,19 @@ Visit the relative [page](https://rocknroll87q.github.io/LOD-Brain/data) for all
 
 If you find this code useful in your research, please consider citing our paper:
 
+Svanera, M., Savardi, M., Signoroni, A., Benini, S., & Muckli, L. (2024). Fighting the scanner effect in brain MRI segmentation with a progressive level-of-detail network trained on multi-site data. Medical Image Analysis, 93, 103090. https://doi.org/10.1016/j.media.2024.103090
+
 ```
-@misc{Svanera2022,
-  doi = {10.48550/ARXIV.2211.02400},
-  url = {https://arxiv.org/abs/2211.02400},
-  author = {Svanera, Michele and Savardi, Mattia and Signoroni, Alberto and Benini, Sergio and Muckli, Lars},
-  keywords = {3D segmentation, brain MRI, progressive level-of-detail architecture, 3D multi-site learning},
+@article{SVANERA2024103090,
   title = {Fighting the scanner effect in brain MRI segmentation with a progressive level-of-detail network trained on multi-site data},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {arXiv.org perpetual, non-exclusive license}
+  journal = {Medical Image Analysis},
+  volume = {93},
+  pages = {103090},
+  year = {2024},
+  issn = {1361-8415},
+  doi = {https://doi.org/10.1016/j.media.2024.103090},
+  url = {https://www.sciencedirect.com/science/article/pii/S136184152400015X},
+  author = {Michele Svanera and Mattia Savardi and Alberto Signoroni and Sergio Benini and Lars Muckli},
+  keywords = {3D segmentation, Brain MRI, Progressive level-of-detail architecture, Multi-site learning},
 }
 ```
