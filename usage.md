@@ -50,6 +50,19 @@ Steps for singularity (similar to docker):
 	LOD_Brain.simg python /source/inference.py --vol_in=/data/
 	~~~	
 	
+	
+	Example (docker):
+	
+	~~~
+	docker run -it --rm  \
+	-v ~/test_lod_brain/input/T1w_256/:/data/ \
+	-v ~/test_lod_brain/LOD-Brain/src/:/source/ \
+	-v ~/test_lod_brain/LOD-Brain/trained_model/:/model/ \
+	-v ~/test_lod_brain/output/:/output/ \
+	rocknroll87q/cerebrum3t-multisite:latest python /source/inference.py --vol_in=/data/
+	~~~	
+
+	
 	In `vol_in` you can pass a folder, for example `vol_in=/data/`, or a volume like `vol_in=/data/sub-01_T1w.nii.gz`
 
 
