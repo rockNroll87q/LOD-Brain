@@ -90,10 +90,7 @@ To train a network from scratch, use the following example:
 	export WANDB_DIR='/output/multi_data/'
 	cd /source/
 
-	python ./main.py --network.num_levels=2 --network.num_initial_filter=8 --network.num_blocks_per_level=3 
---network.conv_block=Plain --network.downsampling_factor=4 --training.loss=per_channel_dice_loss --network.conv_repet
-ition=False --network.bn=GN --data.Filename_csv=dataset_short_training_a+a_LODbrain.csv  --data.Path_in_csv=/LOD_Brai
-n/data/analysis/csv/segmentation/ --network.num_classes=7
+	python ./main.py --network.num_levels=2 --network.num_initial_filter=8 --network.num_blocks_per_level=3 --network.conv_block=Plain --network.downsampling_factor=4 --training.loss=per_channel_dice_loss --network.conv_repetition=False --network.bn=GN --data.Filename_csv=dataset_short_training_a+a_LODbrain.csv  --data.Path_in_csv=/LOD_Brain/data/analysis/csv/segmentation/ --network.num_classes=7
 	~~~	
 Please note that you must set up a wandb account and modify the project name in line 65 of `main.py`.
 
