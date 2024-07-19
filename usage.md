@@ -66,6 +66,38 @@ Steps for singularity (similar to docker):
 	In `vol_in` you can pass a folder, for example `vol_in=/data/`, or a volume like `vol_in=/data/sub-01_T1w.nii.gz`
 
 
+# Training
+
+To train a network from scratch, use the following example:
+
+1. Build the singularity image using docker hub.
+
+	~~~
+	singularity build ./LOD_brain.simg docker://rocknroll87q/cerebrum3t-multisite:latest
+	~~~
+
+2. Prepare your csv.
+
+3. Lunch the training (below the default values):
+
+	~~~
+	singularity shell --cleanenv --nv \
+	 -B ~/training_data/:/LOD_Brain/data/ \
+	 -B ~/src/:/source/ \
+	 -B ~/output/:/output/ \
+	LOD_brain.simg bash
+	
+	export WANDB_DIR='/output/multi_data/'
+	cd /source/
+
+	python ./main.py --network.num_levels=2 --network.num_initial_filter=8 --network.num_blocks_per_level=3 
+--network.conv_block=Plain --network.downsampling_factor=4 --training.loss=per_channel_dice_loss --network.conv_repet
+ition=False --network.bn=GN --data.Filename_csv=dataset_short_training_a+a_LODbrain.csv  --data.Path_in_csv=/LOD_Brai
+n/data/analysis/csv/segmentation/ --network.num_classes=7
+	~~~	
+Please note that you must set up a wandb account and modify the project name in line 65 of `main.py`.
+
+
 
 
 
