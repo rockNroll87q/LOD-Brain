@@ -78,7 +78,7 @@ To train a network from scratch, use the following example:
 
 2. Prepare your csv.
 
-3. Lunch the training (below the default values):
+3. Launch the training (below the default values):
 
 	~~~
 	singularity shell --cleanenv --nv \
